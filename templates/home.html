@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитування</title>
+</head>
+<body>
+    <h1>Опитування на довільну тему</h1>
+    
+    <form action="submit.php" method="post">
+        <p>1. Яка ваша думка щодо даної теми?</p>
+        <input type="radio" id="opinion1" name="opinion" value="Дуже позитивна">
+        <label for="opinion1">Дуже позитивна</label><br>
+        <input type="radio" id="opinion2" name="opinion" value="Позитивна">
+        <label for="opinion2">Позитивна</label><br>
+        <input type="radio" id="opinion3" name="opinion" value="Нейтральна">
+        <label for="opinion3">Нейтральна</label><br>
+        <input type="radio" id="opinion4" name="opinion" value="Негативна">
+        <label for="opinion4">Негативна</label><br>
+        <input type="radio" id="opinion5" name="opinion" value="Дуже негативна">
+        <label for="opinion5">Дуже негативна</label><br>
+        
+        <p>2. Як ви оцінюєте ваше розуміння цієї теми?</p>
+        <select name="understanding">
+            <option value="Дуже добре">Дуже добре</option>
+            <option value="Добре">Добре</option>
+            <option value="Середньо">Середньо</option>
+            <option value="Погано">Погано</option>
+            <option value="Дуже погано">Дуже погано</option>
+        </select><br><br>
+
+        <p>3. Як ви оцінюєте інформативність опитування?</p>
+        <input type="range" id="info" name="information" min="0" max="10"><br><br>
+
+        <p>4. Що б ви хотіли додати чи змінити у цьому опитуванні?</p>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Відправити">
+    </form>
+</body>
+</html>
